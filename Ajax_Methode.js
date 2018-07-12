@@ -1,3 +1,4 @@
+// Méthode semi-complete
 $.ajax({
     url : ".php", // Où envoyer la requête
     method : "", // (GET, POST, PUT)
@@ -14,13 +15,14 @@ $.ajax({
     error : function(request, error) { alert("Erreur : responseText: "+request.responseText);}, // Action en cas d'echec de la requête
     success : function(data) {}, // Action en cas de réussite de la requête
     // complete : function (object, statut) {}, // Action en fin d'appel. (Statut = "success", "notmodified", "nocontent", "error", "timeout", "abort", "parsererror")
-  });
-  
-  
-  
-  
-  
-  $.ajax({
+});
+
+
+
+
+
+// Méthode réduite
+$.ajax({
     url : ".php", // Où envoyer la requête
     method : "", // (GET, POST, PUT)
     data : {}, // Argument(s) à envoyer
@@ -28,28 +30,4 @@ $.ajax({
     async : false, // true ou false
     error : function(request, error) { alert("Erreur : responseText: "+request.responseText);}, // Action en cas d'echec de la requête
     success : function(data) {}, // Action en cas de réussite de la requête
-  });
-  
-  
-  
-  
-  
-  
-  $.ajax({
-    url : "formulaire/formSentier.php", // Où envoyer la requête
-    method : "GET", // (GET, POST, PUT)
-    data : {}, // Argument(s) à envoyer
-    dataType : "html", // Type de la réponse. (xml, json, script, html, jsonp, text)
-    async : false, // true ou false
-    error : function(request, error) { alert("Erreur : responseText: "+request.responseText);}, // Action en cas d'echec de la requête
-    success : function(data) {
-      // Afficher la div
-      if($('#attributs').css('display') == 'none') {
-        affiche_masque("#attributs");
-      };
-
-      // Insertion de la réponse
-      $('#attributs').html(data);
-
-    }, // Action en cas de réussite de la requête
-  });
+});
