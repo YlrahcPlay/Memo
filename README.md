@@ -1,7 +1,4 @@
 # Memo
-# Méthode Ajax
+# Méthode Ajax (jQuery)
 
-Utilise jQuery.
-
-
-Méthode issue du site : https://api.jquery.com/jQuery.ajax/
+Issue du site : https://api.jquery.com/jQuery.ajax/
