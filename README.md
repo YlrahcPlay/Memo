@@ -1,2 +1,7 @@
 # Memo
-Ensemble de petites methodes de travail personnel répartis dans les branchs.
+# Méthode Ajax
+
+Utilise jQuery.
+
+
+Méthode issue du site : https://api.jquery.com/jQuery.ajax/
