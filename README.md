@@ -1,7 +1,5 @@
 # Commande de Git
-Issue de https://git-scm.com/.
-
-Git est un "logiciel"(?) de versionning (historisation de développement)
+Issue de https://git-scm.com/
 
 Vidéo référente : https://www.youtube.com/watch?v=hPfgekYUKgk
 
