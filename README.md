@@ -4,9 +4,5 @@
 ### [Ajax en jQuery](https://github.com/YlrahcPlay/Memo/tree/Ajax)
 ### [Les Commandes de Git](https://github.com/YlrahcPlay/Memo/tree/Git)
 
-
-
-
 *En projet (Faut que j'y pense) :
-
 Les Commandes de Linux*
