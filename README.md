@@ -26,31 +26,35 @@ Diapo référent : https://slides.com/noel_paganelli/deck-1-2-3-4-5-6-9-14-15-20
 ### Séléctionner les fichiers à enregistrer :
     git add MonFichier
     git add --all
-### Enregistrer les changements
+### Déséléctionner un fichier :
+    git reset HEAD MonFichier
+### Enregistrer les changements :
     git commit -m "Commentaire expliquant le changement"
 
 ### Visualisation des différents enregistrement effectué
     git log
 
 ## Branches
-### Créer une branche
+### Créer une branche :
     git branch NomBranche
-### Lister les branches
+### Lister les branches :
     git branch
-### Changer de branche
+### Changer de branche :
     git checkout NomBranche
-### Pour fusionner la branche alternative à la branche principale
-* Séléctionner la branche principale "*git checkout master*"
-* Fusionner les branches "*git merge NomBranche*"
-* Supprimer la branche devenu inutile "*git branch -d NomBranche*"
+### Pour fusionner la branche alternative à la branche principale :
+* Séléctionner la branche principale "_git checkout master_"
+* Fusionner les branches "_git merge NomBranche_"
+* Supprimer la branche devenu inutile "_git branch -d NomBranche_"
 
 ## Dépôt distant
-### Associer un dépôt
+### Associer un dépôt :
     git remote add origin https://urlDuDepot.git
-    git remote add NomDepot UrlDepot.git
-### Déposer le projet sur le dépôt
+    git remote add <name> <url.git>
+### Lister les dépôts :
+    git remote
+### Déposer le projet sur le dépôt :
     git push origin master
     git push NomDepot NomBranche
-### Récupérer un projet du dépôt
+### Récupérer un projet du dépôt :
     git pull origin master
     git pull NomDepot NomBranche
