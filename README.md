@@ -12,7 +12,6 @@ __Options de connexion__
 * -W, --password        : force la demande du mot de passe
 
 __Options générales__
-* -f, --file <nom>      : nom du fichier ou du répertoire en sortie
 * -F, --format <c|d|t|p>: personnalisé (custom), répertoire (directory), tar, texte (plain) (par défaut)
 * -v, --verbose         : mode verbeux (exprime les problèmes)
 * -V, --version         : affiche la version et quitte
@@ -32,10 +31,11 @@ __Option sur le contenu__
     pg_dump.exe --host <hôte> --port <port> --user <utilisateur> --no-password --format <format> --blobs --verbose --file <adresse du fichier>
     pg_dump.exe -h <hôte> -p <port> -U <utilisateur> -w -F <format> -b -v -f <adresse du fichier>
 
-__Option spécifique sur le contenu__
+__Options spécifique sur le contenu__
 * -E, --encoding <nom>  : sauvegarde les données dans l'encodage spécifé
 * -b, --blobs           : inclut les "Large Objects" dans la sauvegarde
 * -Z, --compress <0-9>  : niveau de compression pour les formats compressés
+* -f, --file <nom>      : nom du fichier ou du répertoire en sortie
 
 ## Restaurer
     pg_restore.exe --host <hôte> --port <port> --username "<utilisateur>" --dbname "<nom de la base>" --no-password --verbose --file "<adresse du fichier>"
