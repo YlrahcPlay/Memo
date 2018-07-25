@@ -13,7 +13,7 @@ __Options de connexion__
 
 __Options générales__
 * -f, --file <nom>      : nom du fichier ou du répertoire en sortie
-* -F, --format <c|d|t|p>: personnalisé (custom), répertoire (directory), tar, texte (par défaut)
+* -F, --format <c|d|t|p>: personnalisé (custom), répertoire (directory), tar, texte (plain) (par défaut)
 * -v, --verbose         : mode verbeux (exprime les problèmes)
 * -V, --version         : affiche la version et quitte
 
