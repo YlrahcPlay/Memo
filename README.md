@@ -18,13 +18,13 @@ __Options générales__
 * -V, --version         : affiche la version et quitte
 
 __Option sur le contenu__
-* -a, --data-only       : restaure uniquement les données, pas la structure
 * -c, --clean           : nettoie/supprime les objets de la base de donnée avant de les créer
 * -C, --create          : crée la base de données cible
-* -n, --schema <nom>    : restaure uniquement les objets de ce schéma
+* -a, --data-only       : restaure uniquement les données, pas la structure
 * -s, --schema-only     : restaure uniquement la structure, pas les données
-* -P, --fonction <nom>  : restaure la fonction indiqué
+* -n, --schema <nom>    : restaure uniquement les objets de ce schéma
 * -t, --table <nom>     : restaure la table indiqué
+* -P, --fonction <nom>  : restaure la fonction indiqué
 * -T, --trigger <nom>   : restaure le trigger indiqué
 * --if-exists           : utilise IF EXISTS lors de la suppresion des objets
 
