@@ -1,15 +1,16 @@
 # Commande de VIM
 Issue du didacticiel/tutoriel d'OpenClasseRooms : [VIM éditeur de texte du programmateur](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur)
+
 Et du dicticiel/tutoriel intégré à vim : __vimtutor__
 
-## Lancer VIM
-    vim
 
 ## Mode Normal/Interactif (Par défaut)
 
 ## Mode Insertion
-    Entrer : "i"
     Sortir : "Echap"
+* Insertion : _i_
+* Remplacement : _R_
+* Visualisation : _v_
 
 ## Mode Commande
     Entrée : ":"
@@ -17,32 +18,68 @@ Et du dicticiel/tutoriel intégré à vim : __vimtutor__
 
 
 ## L'utilisation
+* _H, J, K, L = gauche, bas, haut, droite_ : Déplacment
+
+* _vim_ : Lance VIM et ouvre un nouveau document
+* _vim FichierAOuvrir_ : Ouvrir un fichier à editer
+* _:w "adresse du fichier"_ : Enregistrer un nouveau fichier
+* _:w_ : Enregistrer
+* _:wq_ : Enregistrer et quitter
+* _:q!_ : Quitter sans enregistrer
 
 ## Edition
-* Curseur : _H, J, K, L = gauche, bas, haut, droite_
-* Quitter sans enregistrer : _:q! <Entrée>_ / (Passage en mode commande, et action _q!_)
-* Effacer : _X_
-* Ajouter du texte à la fin de la ligne : _A_
-* Enregistrer et quitter : _:wq_
-* Ouvrir un fichier à editer : _vim FichierAOuvrir_
+_Opérateur Nombre Déplacement_ : Format des commandes
+
+### Mouvement
+* _w_ : Avance jusqu'au début du prochain mot
+* _b_ : Revient au mot précédant
+* _e_ : Avance jusqu'à la dernière lettre du mot courant
+* _ge_ : Revient à la fin du mot précédant
+* _$_ : Jusqu'à la fin de la ligne
+* _0_ : Revient au début de la ligne
+
+### Inserer
+* _i_ : Insérer au curseur
+* _a_ : Ajouter après le curseur
+* _A_ : Ajouter à la fin de la ligne
+
+### Supprimer
+* _x_ : Supprim un caractère
+* _Nb + x_ : Supprimer le nombre de caractère indiqué
+* _d + Nb + mouvement_ :
+    * _dw_ : Supprimer le mot après le curseur
+    * _d2w_ : Supprimer 2 mots après le curseur
+    * _d0_ : Supprimer jusqu'à la fin de la ligne
+    * _d$_ : Supprimer jusqu'à la fin de la ligne
+    * _dd_ : Supprimer la ligne
+    * _2dd_ : Supprimer 2 lignes
+
+### Copier/Couper - Coller
+__Copier__
+* _y + mouvement_ :
+    * _yw_ : Copier le mot après le cureur
+    * _y$_ : Copier jusqu'à la fin de la ligne
+    * _yy_ : Copier la ligne
+
+__Couper__
+* _d + mouvement_
+
+__Coller__
+* _p_ : Coller
+* _Nb + p_ : Coller autant de fois qu'indiqué
+
+### Remplacer
+* _r + "la lettre"_ : Remplacer la lettre après le curseur
+* _R_ : Remplacer le texte (Mode Remplacement)
+* _:s/ancien/nouveau_ : Change la premiére occurence d'"ancien" par "nouveau"
+* _:s/ancien/nouveau/g_ : Change toute les occurence de la ligne
+* _:#,#s/ancien/nouveau/g_ : Change toute les occurences entre les lignes indiqué
+* _:%s/ancien/nouveau/g_ : Change toute les occurences dans tout le fichier
+* _:%s/ancien/nouveau/gc_ : Trouve toute les occurences dans le fichier avec demande de confirmation pour chaque occurence
+
 
 ## Opérateur
-Format : _Opérateur Nombre Déplacement_
-* Mouvement :
-    * _w_ : Avance jusqu'au début du prochain mot
-    * _b_ : Revient au mot précédant
-    * _e_ : Avance jusqu'à la dernière lettre du mot courant
-    * _ge_ : Revient à la fin du mot précédant
-    * _$_ : Jusqu'à la fin de la ligne
-    * _0_ : Revient au début de la ligne
 
-* Effacement : _d_
-    se placer au début (du mot, de la ligne) et taper
-    * Effacer un mot : _dw_
-    * Effacer 2 mots : _d2w_
-    * Effacer jusqu'à la fin de la ligne : _d$_
-    * Effacer la ligne : _dd_
-    * Effacer 2 ligne : _2dd_
 
 * Changement : _c_
     * Changer une fin de mot : _ce_ + "la fin du mot"
@@ -70,11 +107,7 @@ Format : _Opérateur Nombre Déplacement_
 * _%_ : Permet de naviguer entre les parenthèses, crochet ... correspondant
 
 ## La Substitution
-* _:s/ancien/nouveau_ : Change la premiére occurence d'"ancien" par "nouveau"
-* _:s/ancien/nouveau/g_ : Change toute les occurence de la ligne
-* _:#,#s/ancien/nouveau/g_ : Change toute les occurences entre les lignes indiqué
-* _:%s/ancien/nouveau/g_ : Change toute les occurences dans tout le fichier
-* _:%s/ancien/nouveau/gc_ : Trouve toute les occurences dans le fichier avec demande de confirmation pour chaque occurence
+
 
 ## Executer une commande externe
 * _:!_
@@ -95,7 +128,7 @@ Format : _Opérateur Nombre Déplacement_
 * _O_ : Ouvre une ligne sur le curseur et passe en insertion
 
 ## Commande d'ajout
-* _a_ : Ajoute après le curseur
+
 
 ## Autre manière de remplacer
 * _R + "Ecriture du texte"_ : Mode Remplacement
