@@ -1,8 +1,6 @@
 # Commande de VIM
 Issue du didacticiel/tutoriel d'OpenClasseRooms : [VIM éditeur de texte du programmateur](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/42693-vim-lediteur-de-texte-du-programmeur)
 
-Et du dicticiel/tutoriel intégré à vim : __vimtutor__
-
 
 ## Mode Normal/Interactif (Par défaut)
 
@@ -44,7 +42,7 @@ _Opérateur Nombre Déplacement_ : Format des commandes
 * _A_ : Ajouter à la fin de la ligne
 
 ### Supprimer
-* _x_ : Supprim un caractère
+* _x_ : Supprimer un caractère
 * _Nb + x_ : Supprimer le nombre de caractère indiqué
 * _d + Nb + mouvement_ :
     * _dw_ : Supprimer le mot après le curseur
@@ -71,43 +69,50 @@ __Coller__
 ### Remplacer
 * _r + "la lettre"_ : Remplacer la lettre après le curseur
 * _R_ : Remplacer le texte (Mode Remplacement)
-* _:s/ancien/nouveau_ : Change la premiére occurence d'"ancien" par "nouveau"
-* _:s/ancien/nouveau/g_ : Change toute les occurence de la ligne
-* _:#,#s/ancien/nouveau/g_ : Change toute les occurences entre les lignes indiqué
-* _:%s/ancien/nouveau/g_ : Change toute les occurences dans tout le fichier
-* _:%s/ancien/nouveau/gc_ : Trouve toute les occurences dans le fichier avec demande de confirmation pour chaque occurence
+* _c + mouvement_ :
+    * _ce_ : Supprime la fin du mot et passe en mode insertion
+    * _c$_ : Supprime la fin de la ligne et passe en mode insertion
 
+* _:s/ancien/nouveau_ : Changer la premiére occurence d'"ancien" par "nouveau"
+* _:s/ancien/nouveau/g_ : Changer toute les occurence de la ligne
+* _:Nb,Nbs/ancien/nouveau/g_ : Changer toute les occurences entre les lignes indiquées
+* _:%s/ancien/nouveau/g_ : Changer toute les occurences dans tout le fichier
+* _:%s/ancien/nouveau/gc_ : Trouver toute les occurences dans le fichier avec demande de confirmation pour chaque occurence
 
-## Opérateur
+### Annuler
+* _u_ : Annuler la dernière commande
+* _Nb + u_ : Annuler le nombre de commande indiqué
+* _U_ : Annuler toute les modification de la ligne
+* _CTRL + r_ : Annuler l'annulation
 
-
-* Changement : _c_
-    * Changer une fin de mot : _ce_ + "la fin du mot"
-    * Changer une fin de ligne : _c$_ + "la fin de la ligne"
-
-* Annulation :
-    * _u_ : annuler la dernière comande
-    * _U_ : Récupère toute la ligne
-    * Annuler l'annulation : _CTRL + R_
-
-* Coller : (Effacer ce que vous voulez couper/copier puis taper) _p_
-* Remplacer : _r_ + "la lettre de remplacement"
-
-## Position du curseur et état du fichier
-* _CTRL + G_ : Affiche la position du curseur et l'état du ficher
+### Déplacement dans le fichier
 * _G_ : Se déplacer à la fin du fichier
 * _gg_ : Se déplacer au début du fichier
-* _numéro + G_ : Se déplacer à la ligne indiqué
+* _Nb + G_ : Se déplacer à la ligne indiqué
 
-## La Recherche
-* _/ + "Le mot ou la phrase"_
-* _n_ : recherche à nouveau
-* _N_ : recherche à nouveau mais dans la direction opposé
-* Pour rechercher dans la direction opposé : _? + "le mot, la phrase"_
+
+
+### Etat du fichier
+* _CTRL + G_ : Affiche la position du curseur et l'état du ficher
+
+
+### Rechercher
+* _/ + "Le mot ou la phrase"_ : Rechercher un mot / une phrase en aval
+* _? + "Le mot ou la phrase"_ : Rechercher en amont
+* _n_ : Rechercher à nouveau en aval
+* _N_ : Recherche à nouveau en amont
+
 * _%_ : Permet de naviguer entre les parenthèses, crochet ... correspondant
 
-## La Substitution
 
+## Fusion de fichiers
+* _:r + "adresse du fichier"_
+* _:r !ls_ : execute la commande et insert le résultat
+
+## Découper l'écran
+* _:sp_ : Découper l'écran horizontalement
+* _:sp + "adresse du fichier"_ : Découper l'écran en 2 + ouverture d'un nouveau fichier
+* _:vsp_ : Découper l'écran verticalement
 
 ## Executer une commande externe
 * _:!_
