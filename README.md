@@ -16,16 +16,17 @@ Issue du didacticiel/tutoriel d'OpenClasseRooms : [VIM éditeur de texte du prog
 
 
 ## L'utilisation
-* _H, J, K, L = gauche, bas, haut, droite_ : Déplacment
-
-* _vim_ : Lance VIM et ouvre un nouveau document
-* _vim FichierAOuvrir_ : Ouvrir un fichier à editer
+* _vim_ : Lancer VIM et ouvrir un nouveau document
+* _vim "adresse du fichier"_ : Ouvrir le fichier cible en edition
 * _:w "adresse du fichier"_ : Enregistrer un nouveau fichier
 * _:w_ : Enregistrer
 * _:wq_ : Enregistrer et quitter
 * _:q!_ : Quitter sans enregistrer
 
 ## Edition
+### Direction
+* _h, j, k, l = gauche, bas, haut, droite_ : Déplacement du curseur
+
 _Opérateur Nombre Déplacement_ : Format des commandes
 
 ### Mouvement
@@ -40,10 +41,16 @@ _Opérateur Nombre Déplacement_ : Format des commandes
 * _i_ : Insérer au curseur
 * _a_ : Ajouter après le curseur
 * _A_ : Ajouter à la fin de la ligne
+* _o_ : Ouvre une ligne dessous le curseur et passe en insertion
+* _O_ : Ouvre une ligne dessus le curseur et passe en insertion
+
+* _:r + "adresse du fichier"_ : Inserer le contenu du fichier ciblé
+* _:r !ls_ : Executer la commande et inserer le résultat
 
 ### Supprimer
-* _x_ : Supprimer un caractère
-* _Nb + x_ : Supprimer le nombre de caractère indiqué
+* _x_ : Supprimer un caractère en aval
+* _X_ : Supprimer un caractère en amont
+* _Nb + x_ : Supprimer en aval le nombre de caractère indiqué
 * _d + Nb + mouvement_ :
     * _dw_ : Supprimer le mot après le curseur
     * _d2w_ : Supprimer 2 mots après le curseur
@@ -52,26 +59,13 @@ _Opérateur Nombre Déplacement_ : Format des commandes
     * _dd_ : Supprimer la ligne
     * _2dd_ : Supprimer 2 lignes
 
-### Copier/Couper - Coller
-__Copier__
-* _y + mouvement_ :
-    * _yw_ : Copier le mot après le cureur
-    * _y$_ : Copier jusqu'à la fin de la ligne
-    * _yy_ : Copier la ligne
-
-__Couper__
-* _d + mouvement_
-
-__Coller__
-* _p_ : Coller
-* _Nb + p_ : Coller autant de fois qu'indiqué
-
 ### Remplacer
 * _r + "la lettre"_ : Remplacer la lettre après le curseur
 * _R_ : Remplacer le texte (Mode Remplacement)
 * _c + mouvement_ :
-    * _ce_ : Supprime la fin du mot et passe en mode insertion
-    * _c$_ : Supprime la fin de la ligne et passe en mode insertion
+    * _ce_ : Supprimer la fin du mot et passer en mode insertion
+    * _c$_ : Supprimer la fin de la ligne et passer en mode insertion
+    * _cc_ : Supprimer la ligne et passer en mode insertion
 
 * _:s/ancien/nouveau_ : Changer la premiére occurence d'"ancien" par "nouveau"
 * _:s/ancien/nouveau/g_ : Changer toute les occurence de la ligne
@@ -90,71 +84,82 @@ __Coller__
 * _gg_ : Se déplacer au début du fichier
 * _Nb + G_ : Se déplacer à la ligne indiqué
 
-
-
-### Etat du fichier
-* _CTRL + G_ : Affiche la position du curseur et l'état du ficher
-
-
 ### Rechercher
 * _/ + "Le mot ou la phrase"_ : Rechercher un mot / une phrase en aval
+    * _/ + "Le mot ou la phrase" + \c_ : Rechercher un mot / une phrase en ignorant la casse
 * _? + "Le mot ou la phrase"_ : Rechercher en amont
 * _n_ : Rechercher à nouveau en aval
 * _N_ : Recherche à nouveau en amont
 
 * _%_ : Permet de naviguer entre les parenthèses, crochet ... correspondant
 
+### Casse
+_Après avoir séléctionner du texte en mode visualisation (v)_
+* _u_ : Mettre en minuscule
+* _U_ : Mettre en Majuscule
 
-## Fusion de fichiers
-* _:r + "adresse du fichier"_
-* _:r !ls_ : execute la commande et insert le résultat
+### Copier/Couper - Coller
+__Copier__
+* _y + mouvement_ :
+    * _yw_ : Copier le mot après le cureur
+    * _y$_ : Copier jusqu'à la fin de la ligne
+    * _yy_ : Copier la ligne
 
-## Découper l'écran
+__Couper__
+* _d + mouvement_
+
+__Coller__
+* _p_ : Coller
+* _Nb + p_ : Coller autant de fois qu'indiqué
+
+
+## Ecran
+### Découper
 * _:sp_ : Découper l'écran horizontalement
 * _:sp + "adresse du fichier"_ : Découper l'écran en 2 + ouverture d'un nouveau fichier
 * _:vsp_ : Découper l'écran verticalement
+
+### Naviguer
+* _"CTRL + w" + "CTRL + w"_ : Naviguer vers la fenêtre suivante
+* _"CTRL + w" + direction_ :
+    * _"CTRL + w" + j_ : Naviguer vers la fenêtre en bas
+    * _"CTRL + w" + k_ : Naviguer vers la fenêtre en haut
+    * _"CTRL + w" + h_ : Naviguer vers la fenêtre à gauche
+    * _"CTRL + w" + l_ : Naviguer vers la fenêtre en droite
+* _"CTRL + w" + "+"_ : Agrandir la taille de la fenêtre
+* _"CTRL + w" + "-"_ : Diminuer la taille de la fenêtre
+* _"CTRL + w" + "="_ : Egaliser la taille des fenêtres
+* _"CTRL + w" + "r"_ : Echanger la position des fenêtres
+* _"CTRL + w" + "q"_ : Fermer la fenêtre actuel
+
 
 ## Executer une commande externe
 * _:!_
 * _:!ls_ : liste tout les fichiers du répertoire courant
 
-## Enregistrement
-* _:w + "Nom du fichier"_ : enregistre un nouveau fichier
 
-## Séléction visuelle
-* _v_
+## Voir l'état du fichier et la position du curseur
+* _CTRL + G_ : Affiche la position du curseur et l'état du ficher
 
-## Insertion texte issue fichier
-* _:r + "adresse du fichier"_
-* _:r !ls_ : execute la commande et insert le résultat
-
-## Commande d'ouverture
-* _o_ : Ouvre une ligne sous le curseur et passe en insertion
-* _O_ : Ouvre une ligne sur le curseur et passe en insertion
-
-## Commande d'ajout
-
-
-## Autre manière de remplacer
-* _R + "Ecriture du texte"_ : Mode Remplacement
-
-## Copier-Coller
-* _y_ : copier le texte selectionné
-* _p_ : pour coller
 
 ## Réglage des options
-* _:set ic_ : ignore la casse
-* _:set hls_ : (hlsearch) surbrille toute les occurences du texte recherché
-* _:set is_ : (incsearch) montre les occurences partiels
+* _:set "Option"_ : Activer l'option
+* _:set "Option"?_ : Connaître l'état de l'option
+* _:set no"Option"_ : Désactiver l'option
 
-* _:set noic_ : désactive l'ignorance de la casse
-* _:set nohlsearch_ / _:set nohls_: désactive la surbrillance
-* _/mot\c_ : igniore la casse un uniquement pour cette recherche
+* _syntax_ / _syn_ (_=ON_/_=OFF_) : Activer la coloration syntaxique
+* _background_ / _bg_ (_=dark_/_=light_): Adapter la coloration au fond
+* _number_ : Afficher le numéro des lignes
+* _showcmd_ : Afficher la commande en cours
+* _ignorecase_ / _ic_ : Ignorer la casse lors de la recherche
+* _hlsearch_ / _hls_ : Mettre en surbrillance toute les occurences du texte recherché
+* _incsearch_ / _is_ : Montrer les occurances partiels
+* _mouse=a_ : Activer le déplacement avec la souris
+
 
 ## Aide
-* _:help_ : Ouvre une fenêtre d'aide
-* _CTRL + W_ : passe d'une page à l'autre
-* _:q_ : pour quitter la fenêtre d'aide
+* _:help_ : Ouvrir une fenêtre d'aide
 
-## Auto-Compléssion
-* _CTRL + D_ : affiche la liste des commande qui commence par l.a.es lettre.s indiquée.s
+
+## Auto-Complétion
+* _CTRL + D_ : Afficher la liste des commandes qui commence par l.a.es lettre.s indiquée.s
