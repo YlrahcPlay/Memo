@@ -1,10 +1,29 @@
-# Memo
-    Ensembles de mémo (répartis dans les branches)
+# Méthodologie de projet
+## Préparation
+* Réunion
+    * Préparation : Ecrire les objectifs & le résultat attendu
+    * Déroulement de la réunion
+* Ecriture d'un Cahier des charges
+* WorkFlow [Réflexion sur l'ensemble des méthodes et des moyens utilisé, et de leur chronologie]
+* Diagramme de GANTT [Evaluation du temps nécéssaire aux étapes du WorkFlow]
 
-* [Ajax en jQuery](https://github.com/YlrahcPlay/Memo/tree/Ajax)
-* [Les Commandes de Git](https://github.com/YlrahcPlay/Memo/tree/Git)
-* [PostgreSQL en ligne de commande](https://github.com/YlrahcPlay/Memo/tree/PostgreSQL)
-* [Les Commandes de V.I.M.](https://github.com/YlrahcPlay/Memo/tree/Vim)
+# Création
+* Conception
+    * Elément 1
+    * Elément 2
+* Développement
+    * Elément 1
+        * Sous élément 1.1
+        * Sous élément 1.2
+        * ...
+    * Elément 2
+        * ...
+    * ...
 
-*En projet :*
-* *Les Commandes de Linux*
+# Conclusion
+* Perspective d'évolution
+
+* Référence bibliographique
+* Annexe
+	* Support d'utilisation
+	* Code informatique
