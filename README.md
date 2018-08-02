@@ -1,5 +1,5 @@
 # Memoriels
-	Ensembles de mémoriels (répartis dans les branches)
+	Ensembles de mémoriels/didacticiels (répartis dans les branches)
 
 * [Ajax en jQuery](https://github.com/YlrahcPlay/Memo/tree/Ajax)
 * [Les Commandes de Git](https://github.com/YlrahcPlay/Memo/tree/Git)
