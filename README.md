@@ -7,7 +7,7 @@
 * WorkFlow [Réflexion sur l'ensemble des méthodes et des moyens utilisé, et de leur chronologie]
 * Diagramme de GANTT [Evaluation du temps nécéssaire aux étapes du WorkFlow]
 
-# Création
+## Création
 * Conception
   * Elément 1
   * Elément 2
@@ -20,7 +20,7 @@
     * ...
   * ...
 
-# Conclusion
+## Conclusion
 * Perspective d'évolution
 
 * Référence bibliographique
