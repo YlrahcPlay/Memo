@@ -37,6 +37,7 @@ Diapo référent : https://slides.com/noel_paganelli/deck-1-2-3-4-5-6-9-14-15-20
 ## Branches
 ### Créer une branche :
     git branch NomBranche
+    git checkout -b NomBranche
 ### Lister les branches :
     git branch
 ### Changer de branche :
