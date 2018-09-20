@@ -4,8 +4,8 @@ Earth Explorer
 OpenStreetMap (API Nominatim - OverpassTurbo)
 ## Europe
 * ESA (Agence Spatial Européenne)
-	scihub.copernicus.eu [Raster]
-	scihub.playground.eu (Image Sentinel)
+	* scihub.copernicus.eu [Raster]
+	* scihub.playground.eu (Image Sentinel)
 
 ## National
 * Gouvernement
