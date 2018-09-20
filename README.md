@@ -9,15 +9,15 @@ OpenStreetMap (API Nominatim - OverpassTurbo)
 
 ## National
 * Gouvernement
-	data.gouv (RPG...)
+	* data.gouv (RPG...)
 * IGN (Admin Express, BD Topo, Route 500, RPG)
-	pro.ign.fr
-	remonterletemps.ign.fr
-	Géoportail
+	* pro.ign.fr
+	* remonterletemps.ign.fr
+	* Géoportail
 * INPN (ZICO, NATURA 2000, ZNIEFF, Réserve BioSphère)
 * INSEE (Base permanente de l'équipement...)
 * SHOM (Maritime)
-	data.shom.fr
+	* data.shom.fr
 
 ## Régional
 * PEGASE (Nouvelle-Aquitaine)
