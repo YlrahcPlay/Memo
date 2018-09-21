@@ -148,6 +148,11 @@
 	Graphique de Gantt (Organisation Temporelle) (Ganttproject.org)
 	Méthode SADT (Organisation de Projet par boite) (JFlux / JMCT [JFreeSoft])
   
-  Balsamiq Mockup (balsamiq.com)
-  Pencil Project (pencil.evolus.vn)
-  Dia (sourceforge.net/projects/dia-installer)
+  	Balsamiq Mockup (balsamiq.com)
+  	Pencil Project (pencil.evolus.vn)
+  	Dia (sourceforge.net/projects/dia-installer)
+  
+# Métadonnée
+	GéoReport
+	Orchestra
+	GéoNetwork
