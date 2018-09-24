@@ -5,7 +5,7 @@ __Carte des espaces aériens réglementé__
 
 En cas de non respect, le télépilote s'expose à un maximum de :
 * six mois d’emprisonnement et 15 000€ d'amende en cas de survol par maladresse ou négligence
-* 1 an d’emprisonnement et 45.000 € d’amende en cas de survol de zone interdite (+ Possibilite confiquation de l'aéronef)
+* 1 an d’emprisonnement et 45.000 € d’amende en cas de survol de zone interdite (+ Possibilite confication de l'aéronef)
 
 Drone dépassant 800g : (loi 2016-1428 du 24 octobre 2016)
 * Enregistrement des drones ;
