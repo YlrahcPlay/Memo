@@ -1,7 +1,7 @@
 # Législation Drône
 __Carte des espaces aériens réglementé__
-[Géoportail](https://www.geoportail.gouv.fr/donnees/restrictions-pour-drones-de-loisir)
-[AIP Drone](http://www.aip-drones.fr/carte/aip-drones/)
+* [Géoportail](https://www.geoportail.gouv.fr/donnees/restrictions-pour-drones-de-loisir)
+* [AIP Drone](http://www.aip-drones.fr/carte/aip-drones/)
 
 En cas de non respect, le télépilote s'expose à un maximum de :
 * six mois d’emprisonnement et 15 000€ d'amende en cas de survol par maladresse ou négligence
