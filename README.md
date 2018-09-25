@@ -48,13 +48,15 @@ Drone dépassant 800g : (loi 2016-1428 du 24 octobre 2016)
 * Distance horizontale max 1km
 * Hauteur max 150m (drone < à 2kg) sinon 50m
 
-### S3 (Nécéssite l'approbation de la DGAC)
+### S3
+(Nécéssite l'approbation de la DGAC)
 * Zone peuplée
 * Vol en vue
 * Distance horizontale max 100m
 * Hauteur max 150m
 
-### S4 (Nécéssite l'approbation de la DGAC)
+### S4
+(Nécéssite l'approbation de la DGAC)
 * Zone peuplée
 * Vol hors vue
 * Distance horizontale max 1km
