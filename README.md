@@ -11,7 +11,7 @@ OpenStreetMap (API Nominatim - OverpassTurbo)
 * Gouvernement
 	* data.gouv (RPG...)
 * IGN (Admin Express, BD Topo, Route 500, RPG)
-	* pro.ign.fr
+	* [https://geoservices.ign.fr/documentation/]
 	* remonterletemps.ign.fr
 	* Géoportail
 * INPN (ZICO, NATURA 2000, ZNIEFF, Réserve BioSphère)
