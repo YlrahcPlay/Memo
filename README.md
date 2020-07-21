@@ -29,12 +29,12 @@ OpenStreetMap (API Nominatim - OverpassTurbo)
 		* WMS : http://geoservices.brgm.fr/odmgm (Observatoire des matériaux et granulats marins)
 		* WMS : http://geoservices.brgm.fr/risques (Risques naturels et industriels)
 * SOGEFI (Cartes et Orthophoto ancienne)
-		* WMS : http://ws.sogefi-web.com/wms?
+	* WMS : http://ws.sogefi-web.com/wms?
 * GéoLittoral (Sentiers littoraux, limites marées, Mers, OCS Corine Land Cover, Fleuves...)
-		* WMS : http://geolittoral.application.equipement.gouv.fr/wms/metropole
-		* WFS : http://geolittoral.application.equipement.gouv.fr/wfs/metropole
+	* WMS : http://geolittoral.application.equipement.gouv.fr/wms/metropole
+	* WFS : http://geolittoral.application.equipement.gouv.fr/wfs/metropole
 * Météo Marine
-		* WFS : http://geoserver1.nasca.fr:8080/geoserver/wfs?
+	* WFS : http://geoserver1.nasca.fr:8080/geoserver/wfs?
 * SANDRE (Eau...)
 	* [sandre.eaufrance.fr](http://www.sandre.eaufrance.fr/)
 		* WFS : http://services.sandre.eaufrance.fr/geo/ouvrage (Ouvrage liée à l'eau)
@@ -72,5 +72,5 @@ OpenStreetMap (API Nominatim - OverpassTurbo)
 * SRTM
 * Global Alos 3D World
 * CarmenCarto
-		* WMS : http://ws.carmencarto.fr/WMS/119/fxx_inpn?
-		* WFS : http://ws.carmencarto.fr/WFS/119/fxx_inpn?
+	* WMS : http://ws.carmencarto.fr/WMS/119/fxx_inpn?
+	* WFS : http://ws.carmencarto.fr/WFS/119/fxx_inpn?
